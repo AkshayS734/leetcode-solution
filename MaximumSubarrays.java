@@ -1,4 +1,4 @@
-class Solution {
+class MaximumSubarrays {
     public long maximumSubarraySum(int[] nums, int k) {
         int n = nums.length;
         if (n < k) {
