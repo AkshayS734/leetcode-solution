@@ -1,4 +1,4 @@
-class Solution {
+class SquareRoot {
     public int mySqrt(int x) {
         int left = 1;
         int right = x;
