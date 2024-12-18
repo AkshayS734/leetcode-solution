@@ -11,7 +11,7 @@ public class GroupAnagrams {
             char[] arr = str.toCharArray();
             Arrays.sort(arr);
             String sortedStr = String.valueOf(arr);
-            map.computeIfAbsent(sortedStr, key -> new ArrayList<>()).add(str);
+            map.computeIfAbsent(sortedStr, _ -> new ArrayList<>()).add(str);
         }
         return new ArrayList<>(map.values());
     }
